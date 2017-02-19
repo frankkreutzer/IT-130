@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Counter-Strike: Global Offensive - Create a Loadout</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="icon" type="image/png" href="images/icon.png" />
+
+    <script type="text/javascript">
+        function loadoutCost() {
+            var primaryWep = parseInt(document.loadoutChoices.buyPrimary.value);
+            var secondaryWep = parseInt(document.loadoutChoices.buySecondary.value);
+            var grenade1 = parseInt(document.loadoutChoices.buyGrenade1.value);
+            var grenade2 = parseInt(document.loadoutChoices.buyGrenade2.value);
+            var grenade3 = parseInt(document.loadoutChoices.buyGrenade3.value);
+            var grenade4 = parseInt(document.loadoutChoices.buyGrenade4.value);
+            var equipment1 = parseInt(document.loadoutChoices.buyEquipment1.value);
+            var equipment2 = parseInt(document.loadoutChoices.buyEquipment2.value);
+            var equipment3 = parseInt(document.loadoutChoices.buyEquipment3.value);
+
+            var totalCost = primaryWep + secondaryWep + grenade1 + grenade2 + grenade3 + grenade4 + equipment1;
+
+            alert("The total cost of this loadout is: $" + totalCost);
+        }
+    </script>
+</head>
+
+<body>
+    <ul id="nav">
+        <li>
+            <a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-home.html">Home</a>
+        </li>
+
+        <li>
+            <a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-about.html">About</a>
+        </li>
+        <li>
+            <a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-gamemodes.html">Game Modes</a>
+        </li>
+        <li>
+            <a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-weapons.html">Weapons and Equipment</a>
+            <ul>
+                <li><a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-rifles.html">Rifles</a></li>
+                <li><a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-smgs.html">Sub-Machine Guns</a></li>
+                <li><a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-machineguns.html">Machine Guns</a></li>
+                <li><a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-shotguns.html">Shotguns</a></li>
+                <li><a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-pistols.html">Pistols</a></li>
+                <li><a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-knives.html">Knives</a></li>
+                <li><a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-grenades.html">Grenades</a></li>
+                <li><a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-equipment.html">Equipment</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-loadout.html">Create a Loadout</a>
+        </li>
+        <li>
+            <a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-casesim.html">Case Simulator</a>
+        </li>
+        <li>
+            <a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-namegen.html">Name Generator</a>
+        </li>
+    </ul>
+
+    <div id="header">
+        <img src="images/csgo-logo.png" alt="The letters C-S with a military guy hold a gun then the letters G-O">
+    </div>
+
+    <div id="section">
+        <h1 class="title">Create Your Own Loadout</h1>
+
+        <form name="loadoutChoices">
+            <h3>Choose a Primary Weapon</h3>
+            <p>Primary Weapon:
+                <select name="buyPrimary">
+                    <option value="0" disabled selected> -- select an option -- </option>
+                    <option value="0" disabled="disabled">-- Rifles --</option>
+                    <option value="5000">SCAR-20</option>
+                    <option value="5000">G3SG1</option>
+                    <option value="4750">AWP</option>
+                    <option value="1700">SSG-08</option>
+                    <option value="3300">AUG</option>
+                    <option value="3000">SG-553</option>
+                    <option value="3100">M4A1-S</option>
+                    <option value="3100">M4A4</option>
+                    <option value="2700">AK-47</option>
+                    <option value="2250">FAMAS</option>
+                    <option value="2000">Galil AR</option>
+                    <option value="" disabled="disabled">-- SMG's --</option>
+                    <option value="1200">UMP-45</option>
+                    <option value="1400">PP-Bizon</option>
+                    <option value="1700">MP7</option>
+                    <option value="2350">P90</option>
+                    <option value="1250">MP9</option>
+                    <option value="1050">MAC-10</option>
+                    <option value="" disabled="disabled">-- Machine Guns --</option>
+                    <option value="5700">M249</option>
+                    <option value="5200">Negev</option>
+                    <option value="" disabled="disabled">-- Shot Guns --</option>
+                    <option value="1200">Nova</option>
+                    <option value="2000">XM1014</option>
+                    <option value="1800">MAG-7</option>
+                    <option value="1200">Sawed-Off</option>
+                </select>
+            </p>
+            <br>
+
+            <h3>Choose a Secondary Weapon</h3>
+            <p>Pistols:
+                <select name="buySecondary">
+                    <option value="0" disabled selected> -- select an option -- </option>
+                    <option value="0">Glock-18</option>
+                    <option value="0">P2000</option>
+                    <option value="0">USP-S</option>
+                    <option value="500">Five-Seven</option>
+                    <option value="500">CZ75-Auto</option>
+                    <option value="500">Tec-9</option>
+                    <option value="300">P250</option>
+                    <option value="500">Duel Berettas</option>
+                    <option value="700">Desert Eagle</option>
+                    <option value="850">R8 Revolver</option>
+                </select>
+            </p>
+            <br>
+
+            <h3>Choose Grenades (Up to Four)</h3>
+            <p>Grenades:
+                <select name="buyGrenade1">
+                    <option value="0" disabled selected> -- select an option -- </option>
+                    <option value="300">Frag Grenade</option>
+                    <option value="600">Smoke Grenade</option>
+                    <option value="50">Decoy Grenade</option>
+                    <option value="400">Molotov Cocktail</option>
+                    <option value="600">Incendiary Grenade</option>
+                    <option value="200">Flashbang</option>
+                </select>
+                <select name="buyGrenade2" size="display: inline">
+                    <option value="0" disabled selected> -- select an option -- </option>
+                    <option value="300">Frag Grenade</option>
+                    <option value="600">Smoke Grenade</option>
+                    <option value="50">Decoy Grenade</option>
+                    <option value="400">Molotov Cocktail</option>
+                    <option value="600">Incendiary Grenade</option>
+                    <option value="200">Flashbang</option>
+                </select>
+                <select name="buyGrenade3" size="display: inline">
+                    <option value="0" disabled selected> -- select an option -- </option>
+                    <option value="300">Frag Grenade</option>
+                    <option value="600">Smoke Grenade</option>
+                    <option value="50">Decoy Grenade</option>
+                    <option value="400">Molotov Cocktail</option>
+                    <option value="600">Incendiary Grenade</option>
+                    <option value="200">Flashbang</option>
+                </select>
+                <select name="buyGrenade4" size="display: inline">
+                    <option value="0" disabled selected> -- select an option -- </option>
+                    <option value="300">Frag Grenade</option>
+                    <option value="600">Smoke Grenade</option>
+                    <option value="50">Decoy Grenade</option>
+                    <option value="400">Molotov Cocktail</option>
+                    <option value="600">Incendiary Grenade</option>
+                    <option value="200">Flashbang</option>
+                </select>
+            </p>
+            <br>
+
+            <h3>Choose Equipment (Only one choice per item)</h3>
+            <p>Equipment:
+                <select name="buyEquipment1">
+                    <option value="0" disabled selected> -- select an option -- </option>
+                    <option value="600">Kevlar Vest</option>
+                    <option value="1000">Kevlar Vest and Hemlet</option>
+                    <option value="400">Defusal Kit</option>
+                    <option value="400">Rescue Kit</option>
+                    <option value="200">Zeus x27</option>
+                </select>
+                <select name="buyEquipment2" style="display: inline">
+                    <option value="0" disabled selected> -- select an option -- </option>
+                    <option value="600">Kevlar Vest</option>
+                    <option value="1000">Kevlar Vest and Hemlet</option>
+                    <option value="400">Defusal Kit</option>
+                    <option value="400">Rescue Kit</option>
+                    <option value="200">Zeus x27</option>
+                </select>
+                <select name="buyEquipment3" style="display: inline">
+                    <option value="0" disabled selected> -- select an option -- </option>
+                    <option value="600">Kevlar Vest</option>
+                    <option value="1000">Kevlar Vest and Hemlet</option>
+                    <option value="400">Defusal Kit</option>
+                    <option value="400">Rescue Kit</option>
+                    <option value="200">Zeus x27</option>
+                </select>
+
+                <p>
+                    <input type="button" value="Purchase Loadout!" name="btnSubmit" onclick="loadoutCost()">
+                </p>
+        </form>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Counter-Strike: Global Offensive - Case Simulator</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="icon" type="image/png" href="images/icon.png" />
+
+    <script type="text/javascript">
+        function nameGenerator() {
+            var firstName = ["Kenny", "Eustace", "Olof", "Boulbie", "Rwanda", "Pocahontas", "Bob", "DJ", "FaZe", "Clint"];
+            var nickName = ["'Snax'", "'S1mple'", "'Happy'", "'apEX'", "'NerVe'", "'device'"];
+            var lastName = ["Murphy", "Lahti", "Albertson", "Shultz", "Scrub", "Cervoni", "Kostyliev", "Krieger", "Lowry", "Stamper"];
+
+            var first = firstName[Math.floor(Math.random() * firstName.length)]; //retrieves a random name from the fristName array
+            var nick = nickName[Math.floor(Math.random() * nickName.length)]; //retrieves a random name from the nickName array
+            var last = lastName[Math.floor(Math.random() * lastName.length)]; //retrieves a random name from the lastName array
+
+            document.getElementById("playerName").innerHTML = "Player Name: " + first + " " + " " + nick + " " + last;
+        }
+    </script>
+</head>
+
+<body>
+    <ul id="nav">
+        <li>
+            <a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-home.html">Home</a>
+        </li>
+
+        <li>
+            <a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-about.html">About</a>
+        </li>
+        <li>
+            <a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-gamemodes.html">Game Modes</a>
+        </li>
+        <li>
+            <a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-weapons.html">Weapons and Equipment</a>
+            <ul>
+                <li><a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-rifles.html">Rifles</a></li>
+                <li><a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-smgs.html">Sub-Machine Guns</a></li>
+                <li><a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-machineguns.html">Machine Guns</a></li>
+                <li><a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-shotguns.html">Shotguns</a></li>
+                <li><a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-pistols.html">Pistols</a></li>
+                <li><a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-knives.html">Knives</a></li>
+                <li><a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-grenades.html">Grenades</a></li>
+                <li><a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-equipment.html">Equipment</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-loadout.html">Create a Loadout</a>
+        </li>
+        <li>
+            <a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-casesim.html">Case Simulator</a>
+        </li>
+        <li>
+            <a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-namegen.html">Name Generator</a>
+        </li>
+    </ul>
+
+    <div id="header">
+        <img src="images/csgo-logo.png" alt="The letters C-S with a military guy hold a gun then the letters G-O">
+    </div>
+
+    <div id="section">
+        <h1 class="title">Click the Button To Generate a Random Player Name</h1>
+
+        <img class="center" src="images/player.png" alt="Two soldiers side by side holding guns">
+        <h2 id="playerName">Player Name: </h2>
+        <p>
+            <input type="button" value="Generate Name" name="btnSubmit" onClick="nameGenerator()">
+        </p>
+
+    </div>
+</body>
+
+</html>

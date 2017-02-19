@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title>Counter-Strike: Global Offensive - Case Simulator</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="icon" type="image/png" href="images/icon.png" />
+
+    <script type="text/javascript">
+        function caseOpener()
+        {
+                var wepNum = parseInt((Math.random() * 15) + 1);     //create a random integer between 1 and 6
+                var wepImage = document.getElementById("caseImage"); //assigns the caseImage id to the wepImage variable
+                var nameColor = document.getElementById("wepName"); //assigns the wepName id to the nameColor variable
+                if (wepNum == 1)
+                {
+                    wepImage.src = "images/case/xm.png" //assigns the wepImage variable to the specific weapon imaage when called
+                    nameColor.style.color="#0000FF" //changes text color based on skin rarity
+                    document.getElementById("wepName").innerHTML = "XM1014 | Quicksilver" //changes the "Chroma Case" text to the specific gun name with skin name
+                }
+                else if (wepNum == 2)
+                {
+                    wepImage.src = "images/case/scar.png"
+                    nameColor.style.color="#0000FF"
+                    document.getElementById("wepName").innerHTML = "SCAR-20 | Grotto"
+                }
+                else if (wepNum == 3)
+                {
+                    wepImage.src = "images/case/sawedoff.png"
+                    nameColor.style.color="#800080"
+                    document.getElementById("wepName").innerHTML = "Sawed-Off | Serenity"
+                }
+                else if (wepNum == 4)
+                {
+                    wepImage.src = "images/case/p250.png"
+                    nameColor.style.color="#fb3eb0"
+                    document.getElementById("wepName").innerHTML = "P250 | Muertos"
+                }
+                else if (wepNum == 5)
+                {
+                    wepImage.src = "images/case/mp9.png"
+                    nameColor.style.color="#0000FF"
+                    document.getElementById("wepName").innerHTML = "MP9 | Deadly Poison"
+                }
+                else if (wepNum == 6)
+                {
+                    wepImage.src = "images/case/mac10.png"
+                    nameColor.style.color="#800080"
+                    document.getElementById("wepName").innerHTML = "MAC-10 | Malachite"
+                }
+                else if (wepNum == 7)
+                {
+                    wepImage.src = "images/case/m249.png"
+                    nameColor.style.color="#0000FF"
+                    document.getElementById("wepName").innerHTML = "M249 | System Lock"
+                }
+                else if (wepNum == 8)
+                {
+                    wepImage.src = "images/case/m4a4.png"
+                    nameColor.style.color="#fb3eb0"
+                    document.getElementById("wepName").innerHTML = "M4A4 | 龍王 (Dragon King)"
+                }
+                else if (wepNum == 9)
+                {
+                    wepImage.src = "images/case/galil.png"
+                    nameColor.style.color="#FF0000"
+                    document.getElementById("wepName").innerHTML = "Galil AR | Chatterbox"
+                }
+                else if (wepNum == 10)
+                {
+                    wepImage.src = "images/case/g18.png"
+                    nameColor.style.color="#0000FF"
+                    document.getElementById("wepName").innerHTML = "Glock-18 | Catacombs"
+                }
+                else if (wepNum == 11)
+                {
+                    wepImage.src = "images/case/dual.png"
+                    nameColor.style.color="#800080"
+                    document.getElementById("wepName").innerHTML = "Dual Berettas | Urban Shock"
+                }
+                else if (wepNum == 12)
+                {
+                    wepImage.src = "images/case/deagle.png"
+                    nameColor.style.color="#800080"
+                    document.getElementById("wepName").innerHTML = "Desert Eagle | Naga"
+                }
+                else if (wepNum == 13)
+                {
+                    wepImage.src = "images/case/awp.png"
+                    nameColor.style.color="#FF0000"
+                    document.getElementById("wepName").innerHTML = "AWP | Man-o'-war"
+                }
+                else if (wepNum == 14)
+                {
+                    wepImage.src = "images/case/ak47.png"
+                    nameColor.style.color="#fb3eb0"
+                    document.getElementById("wepName").innerHTML = "AK-47 | Cartel"
+                }
+                else if (wepNum == 15)
+                {
+                    wepImage.src = "images/case/knife.png"
+                    nameColor.style.color="#FFD700"
+                    document.getElementById("wepName").innerHTML = "M9 Bayonet | Doppler"
+                }
+        }
+    </script>
+</head>
+
+<body>
+    <ul id="nav">
+        <li>
+            <a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-home.html">Home</a>
+        </li>
+
+        <li>
+            <a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-about.html">About</a>
+        </li>
+        <li>
+            <a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-gamemodes.html">Game Modes</a>
+        </li>
+        <li>
+            <a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-weapons.html">Weapons and Equipment</a>
+            <ul>
+                <li><a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-rifles.html">Rifles</a></li>
+                <li><a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-smgs.html">Sub-Machine Guns</a></li>
+                <li><a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-machineguns.html">Machine Guns</a></li>
+                <li><a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-shotguns.html">Shotguns</a></li>
+                <li><a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-pistols.html">Pistols</a></li>
+                <li><a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-knives.html">Knives</a></li>
+                <li><a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-grenades.html">Grenades</a></li>
+                <li><a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-equipment.html">Equipment</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-loadout.html">Create a Loadout</a>
+        </li>
+        <li>
+            <a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-casesim.html">Case Simulator</a>
+        </li>
+        <li>
+            <a href="http://studentweb.cdm.depaul.edu/~fkreutze/final/csgo-namegen.html">Name Generator</a>
+        </li>
+    </ul>
+
+    <div id="header">
+        <img src="images/csgo-logo.png" alt="The letters C-S with a military guy hold a gun then the letters G-O">
+    </div>
+
+    <div id="section">
+        <h1 class="title">Click the Button To Receive a Random Weapon Skin</h1>
+
+        <img id="caseImage" class="center" src="images/case/chroma.png" alt="A yellow CS:GO weapon case and key">
+        <h2 id="wepName">Chroma Case</h2>
+        <p><input type="button" value="Open Case" name="btnSubmit" onClick="caseOpener()"></p>
+
+    </div>
+</body>
+</html>
