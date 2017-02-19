@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript and Forms</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="icon" type="image/png" href="images/icon.png" />
+
+	<script type="text/javascript">
+        function shoppingCart()
+        {
+		    var firstName, lastName;
+			var address, city, state, zip;
+            var item, quantity, totalPrice;
+
+			firstName = document.shoppingInfo.txtFirstName.value;
+			lastName = document.shoppingInfo.txtLastName.value;
+			address = document.shoppingInfo.txtAddress.value;
+            city = document.shoppingInfo.txtCity.value;
+            state = document.shoppingInfo.txtState.value;
+            zip = document.shoppingInfo.txtZip.value;
+            item = document.shoppingInfo.selItem.value;
+            quantity = document.shoppingInfo.txtQuantity.value;
+            totalPrice = quantity * item;
+
+            alert("Customer Information: \n" + "Name: " + firstName + " " + lastName + "\n" + "Address: " + address + ", " + city + ", " + state + ", " + zip + "\n" + "\nOrder Information: \n" + "The price for your item is $" + item + ", x" + quantity + "\n" + "The total cost for this purchase is $" + totalPrice);
+        }
+	</script>
+
+</head>
+
+<body>
+    <p1 class="info">
+        Frank Kreutzer <br>
+        IT 130 <br>
+        Assignment 4 <br>
+        <a href="http://studentweb.cdm.depaul.edu/~fkreutze/assignment-3/assignment3.html"> Go to the Index Page </a>
+    </p1>
+
+    <h1 class="title">Shoppers Market!</h1>
+
+    <br>
+
+    <h3>Fill in the Necessary Information Fields.</h3>
+
+    <br>
+
+<form name="shoppingInfo">
+    <p>First Name: <input type="text" name="txtFirstName"></p>
+
+    <p>Last Name: <input type="text" name="txtLastName"></p>
+
+    <p>Street Address: <input type="text" name="txtAddress"></p>
+
+    <p>City: <input type="text" name="txtCity"> State: <input type="text" name="txtState"> ZIP Code: <input type="text" name="txtZip"></p>
+
+    <p>Items Availble For Purchase:
+        <select name="selItem">
+		    <option value="14.99">T-Shirt ($14.99)</option>
+		    <option value="49.99">Headphones ($49.99)</option>
+            <option value="7.99">Coffee Mug ($7.99)</option>
+            <option value="8.79">Shampoo ($8.79)</option>
+            <option value="17.99">Book ($17.99)</option>
+            <option value="19.99">Leather Wallet ($19.99)</option>
+            <option value="12.99">Desk Lamp ($12.99)</option>
+	    </select>
+    </p>
+
+    <p>Quantity: <input type="text" name="txtQuantity"></p>
+
+    <p><input type="button" value="Checkout!" name="btnSubmit" onclick="shoppingCart()"></p>
+</form>
+
+</body>
+</html>
