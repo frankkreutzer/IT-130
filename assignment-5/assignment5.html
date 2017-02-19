@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title>Dice Roller</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="icon" type="image/png" href="images/icon.png" />
+
+    <script type="text/javascript">
+        var diceImage1 = document.createElement("img");     //creating an image tag for the images being used
+        var diceImage2 = document.createElement("img");
+
+        function rollDice()
+        {
+            var dice1 = parseInt((Math.random() * 6) + 1);     //create a random integer between 1 and 6
+            var dice2 = parseInt((Math.random() * 6) + 1);
+            var total = dice1 + dice2;     //sum of the two random dice
+
+            document.getElementById('dice1').appendChild(diceImage1);   //this attaches the image to the div, dice1. Got help from stack overflow with the appendChild function
+
+            if (dice1 == 1)
+            {
+                diceImage1.src = 'images/d1.gif'    //defines the path for the attached images if the condtion is met (same for all similar lines, just different paths). This was also learned from stack overflow
+            }
+            else if (dice1 == 2)
+            {
+                diceImage1.src = 'images/d2.gif'
+            }
+            else if (dice1 == 3)
+            {
+                diceImage1.src = 'images/d3.gif'
+            }
+            else if (dice1 == 4)
+            {
+                diceImage1.src = 'images/d4.gif'
+            }
+            else if (dice1 == 5)
+            {
+                diceImage1.src = 'images/d5.gif'
+            }
+            else if (dice1 == 6)
+            {
+                diceImage1.src = 'images/d6.gif'
+            }
+
+
+
+            document.getElementById('dice2').appendChild(diceImage2);   //this attaches the image to the div, dice2
+
+            if (dice2 == 1)
+            {
+                diceImage2.src = 'images/d1.gif'    //defines the path for the attached images if the condtion is met (same for all similar lines, just different paths)
+            }
+            else if (dice2 == 2)
+            {
+                diceImage2.src = 'images/d2.gif'
+            }
+            else if (dice2 == 3)
+            {
+                diceImage2.src = 'images/d3.gif'
+            }
+            else if (dice2 == 4)
+            {
+                diceImage2.src = 'images/d4.gif'
+            }
+            else if (dice2 == 5)
+            {
+                diceImage2.src = 'images/d5.gif'
+            }
+            else if (dice2 == 6)
+            {
+                diceImage2.src = 'images/d6.gif'
+            }
+
+            alert("You rolled a " + dice1 + " and " + dice2 + "\n" + "The sum of the two die is " + total);
+        }
+    </script>
+</head>
+
+<body>
+    <p1 class="info">
+        Frank Kreutzer <br>
+        IT 130 <br>
+        Assignment 5 <br>
+        <a href="http://studentweb.cdm.depaul.edu/~fkreutze/assignment-3/assignment3.html"> Go to the Index Page </a>
+    </p1>
+
+    <h3>Click the button to roll two dice!</h3>
+
+    <div id="dice1"></div>  <!-- place holder for the images -->
+    <div id="dice2"></div>
+
+    <!--<form name="rollingDice">-->
+        <p><input type="button" value="Roll!" name="btnSubmit" onClick="rollDice()"></p>
+    <!--</form>-->
+</body>
+</html>
