@@ -1,0 +1,41 @@
+.info {
+    font-style: italic;
+    color: #FFFFFF
+}
+
+body {
+    background-image: url("../images/lion.jpg");
+}
+
+.title {
+    color: #e68a00;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #e68a00;
+}
+
+h1 {
+    color: #e68a00;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+a, li {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/*#dice1 img, #dice2 img {
+    background-color: #fff;
+}
+
+#dice1, #dice2 {
+     display: inline;
+}*/
